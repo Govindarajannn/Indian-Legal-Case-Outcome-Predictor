@@ -1,4 +1,4 @@
-# 🧑‍⚖️ Indian Supreme Court Case Outcome Predictor
+# Indian Supreme Court Case Outcome Predictor
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://www.python.org/downloads/release/python-310/)
 [![Model](https://img.shields.io/badge/Model-LLaMA3.1--8B-orange)]()
@@ -13,11 +13,11 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 
 | Step | Description |
 |------|-------------|
-| 🔗 **Data Extraction** | Scraped Supreme Court case links and case texts from [Indian Kanoon](https://www.indiankanoon.org/) |
-| 📝 **Case Summarization** | Summarized cases into structured sections using a local LLaMA3.1-8B model |
-| ⚖️ **Law Retrieval (RAG)** | Retrieved relevant Indian Penal Code laws using vector search (Qdrant) |
-| 🔄 **Pretraining & Fine-tuning** | Domain-adapted the LLM and trained it to predict judgments |
-| 📊 **Evaluation** | Evaluated predictions using faithfulness, ROUGE, BLEU, and BERT-based metrics |
+| **Data Extraction** | Scraped Supreme Court case links and case texts from [Indian Kanoon](https://www.indiankanoon.org/) |
+| **Case Summarization** | Summarized cases into structured sections using a local LLaMA3.1-8B model |
+| ⚖**Law Retrieval (RAG)** | Retrieved relevant Indian Penal Code laws using vector search (Qdrant) |
+| **Pretraining & Fine-tuning** | Domain-adapted the LLM and trained it to predict judgments |
+| **Evaluation** | Evaluated predictions using faithfulness, ROUGE, BLEU, and BERT-based metrics |
 
 ---
 
@@ -72,17 +72,17 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 | **BERTScore**           | 0.8862    |
 | **Sentence-BERT Cosine**| 0.7064    |
 
-> 📈 These scores indicate strong semantic and factual alignment with true outcomes.
+> These scores indicate strong semantic and factual alignment with true outcomes.
 
 ---
 
 ## 🛠️ Technologies Used
 
-- 🐍 Python 3.10+
-- 🦙 LLaMA 3.1–8B (local inference)
-- 💾 Qdrant (vector DB)
-- 📄 PyPDF (for IPC PDF parsing)
-- 🤗 HuggingFace metrics: ROUGE, BLEU, BERTScore, Sentence-BERT
+- Python 3.10+
+- LLaMA 3.1–8B (local inference)
+- Qdrant (vector DB)
+- PyPDF (for IPC PDF parsing)
+- HuggingFace metrics: ROUGE, BLEU, BERTScore, Sentence-BERT
 
 ---
 
