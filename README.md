@@ -9,19 +9,19 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 | Step | Description |
 |------|-------------|
 | **Data Extraction** | Scraped Supreme Court case links and case texts from [Indian Kanoon](https://www.indiankanoon.org/) |
 | **Case Summarization** | Summarized cases into structured sections using a local LLaMA3.1-8B model |
-| ⚖**Law Retrieval (RAG)** | Retrieved relevant Indian Penal Code laws using vector search (Qdrant) |
+| **Law Retrieval (RAG)** | Retrieved relevant Indian Penal Code laws using vector search (Qdrant) |
 | **Pretraining & Fine-tuning** | Domain-adapted the LLM and trained it to predict judgments |
 | **Evaluation** | Evaluated predictions using faithfulness, ROUGE, BLEU, and BERT-based metrics |
 
 ---
 
-## 📂 Directory Structure
+## Directory Structure
 
 ```bash
 .
@@ -40,7 +40,7 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 
 ---
 
-## 🏛️ Data Source
+##  Data Source
 
 - **Website**: [Indian Kanoon](https://www.indiankanoon.org/)
 - **Court**: Supreme Court of India
@@ -49,7 +49,7 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 - **Base Model**: LLaMA 3.1 8B
 - **Techniques**:
@@ -60,7 +60,7 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 
 ---
 
-## 🔍 Evaluation Metrics & Results
+## Evaluation Metrics & Results
 
 | Metric                  | Score     |
 |-------------------------|-----------|
@@ -76,7 +76,7 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python 3.10+
 - LLaMA 3.1–8B (local inference)
@@ -86,7 +86,7 @@ This project builds a **domain-adapted, fine-tuned LLM** to **predict outcomes o
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -109,7 +109,7 @@ python case-extraction.py
 
 ---
 
-## 🧪 Example Output Format
+## Example Output Format
 
 ```json
 {
@@ -121,7 +121,7 @@ python case-extraction.py
 
 ---
 
-## 📌 Future Work
+## Future Work
 
 - Support more courts (High Courts, Tribunals)
 - Legal precedent tracing & citation support
